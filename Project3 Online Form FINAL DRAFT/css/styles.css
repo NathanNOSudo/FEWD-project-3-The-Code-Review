@@ -1,0 +1,321 @@
+
+body {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: .8em;
+    line-height: 1.4;
+    color: #818181;
+    background: #fff;
+}
+
+header .container {
+    padding: 1.5em 0;
+    text-align: center;
+    border-bottom: 5px solid navy;
+}    
+
+h1{
+    background: navy;
+    color: #fff;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 2em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2, legend {
+    font-size: 1.325em;
+    font-weight: 700;
+    color: navy;  
+    letter-spacing: normal;
+    word-spacing: normal;  
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+/* Form Styling */
+
+form {
+    border-top: 2px solid navy;
+    margin-top: 3px;
+    padding: 0.6em .1em 0;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  display: block;
+  box-sizing: border-box;
+  padding: .3em;
+  width: 100%;
+  line-height: .5;
+  border: 3px solid transparent;
+
+}
+
+
+
+input#name::placeholder,
+input#mail::placeholder {
+    text-align: right;
+    font-weight: 100;
+    font-style: italic;
+    padding: 1em;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select{
+  padding-left: .5em;
+  border-radius: 3px;
+  background-color: rgb(223, 229, 236);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+  border: 3px solid blue;
+  
+}
+
+select {
+  color: #818181;
+}
+
+option:disabled {
+  color: #818181;
+}
+
+label span {
+    display: block;
+    margin-top: .3em;
+    margin-bottom: .3em;
+}
+
+legend {
+  text-align: left;
+}
+
+fieldset {
+    border: none;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+fieldset div {
+    display: flex;
+    margin-top: .2em;
+    flex-direction: column;
+}
+
+fieldset:first-child {
+  margin-bottom: 3em;
+  padding-bottom: 3em; 
+  border-bottom: 2px solid navy;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  margin: .4em 0 1em;
+  list-style: none;
+}
+
+.flex li {
+  display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
+  justify-content: flex-start
+
+}
+
+
+
+
+
+
+
+
+
+
+form > fieldset:nth-child(2) > div > label {
+  width: 100%;
+  margin-bottom: 1em;
+} 
+
+button {
+  background: turquoise;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: .719em;
+  width: 100%;
+  font-size: 1.266em;
+  font-weight: 600;
+  margin-top: 1.5em;
+  margin-bottom: .1em;
+  box-sizing: border-box;
+}
+
+
+textarea {
+  resize: none;
+}
+
+
+footer {
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 1em;
+  padding: 1.5em 0 1em;
+}
+
+/*********************
+    Checkbox/Rodio
+*********************/
+
+input[type="checkbox"],
+input[type="radio"] {
+  width: auto;
+  align-self: center;
+  margin-right: 10px;
+
+}
+
+
+input[type="checkbox"] + label{
+    display:block;
+    margin: 0.8em;
+    cursor:pointer;
+  
+  }
+  
+  
+  input[type="checkbox"] {
+    display:none;
+  
+  }
+  
+  input[type="radio"] + label{
+    display:block;
+    margin: 0.8em;
+    cursor:pointer;
+  }
+  
+  
+  input[type="radio"] {
+    display:none;
+  
+  }
+  
+  
+  input[type="checkbox"] + label:before {
+    content:"\2714";
+    border:0.1em solid #000;
+    border-radius: 0.2em;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    padding-left:0.2em;
+    padding-bottom:0.3em;
+    margin-right: 0.8em;
+    vertical-align: bottom;
+    color: transparent;
+    transition:.2s;
+  }
+  
+  input[type="checkbox"] + label:active:before {
+    transform: scale(0);
+  }
+  
+  input[type="checkbox"]:checked + label:before {
+    background-color: rgb(27, 126, 255);
+    border-color:rgb(27, 126, 255);
+    color:#fff;
+  }
+  
+  
+  
+  input[type="radio"] + label:before {
+    content:"\02022";
+    border:0.1em solid #000;
+    border-radius: 20px;
+    display: inline-block;
+    width: 12px;
+    height: 16px;
+    padding-left:0.6em;
+    padding-bottom:0.3em;
+    margin-right: 0.8em;
+    vertical-align: bottom;
+    color: transparent;
+    transition:.2s;
+  }
+  
+  input[type="radio"] + label:active:before {
+    transform: scale(0);
+  }
+  
+  input[type="radio"]:checked + label:before {
+    background-color: rgb(27, 126, 255);
+    border-color:rgb(27, 126, 255);
+    color:#fff;
+  }
+  
+
+  @media screen and (min-width: 768px) {
+
+    .container {
+        max-width: 50%;
+    }
+
+    fieldset div label {
+      font-size-adjust: initial;
+    }
+
+    fieldset div {
+
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    label {
+        width: 40%;
+        line-height: 1.5em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    
+    form > fieldset:nth-child(2) > div {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      } 
+
+      textarea#message {
+        padding: .3em;
+      }
+
+}
